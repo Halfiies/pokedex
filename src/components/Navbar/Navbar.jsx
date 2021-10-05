@@ -1,8 +1,9 @@
 import react from "react";
-import Searchbar from "../SearchBar/Searchbar";
+import Searchbar from "../Searchbar/Searchbar";
 
 const Navbar = (props) => {
-  return <Searchbar />;
+  const { handleInput } = props;
+  return <Searchbar handleInput={handleInput} />;
 };
 
 export default Navbar;
